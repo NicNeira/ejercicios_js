@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Identificar cuantas veces se repite un caracter
+
+        //Se define la funcion
+        function cuantasSeRepite() {
+
+            //Se crean variables
+            let texto = "quwheihainsdoqij12389841273123jsakdnqwoeij"; //Datos que ingresan para comparar si se repiten
+            let busqueda = "s"; //Valo que se buscara
+            let contador = ""; //Contador que llevara la cuenta cuantas veces se repite
+
+            // inicia posicion 0 ; mientras i sea menor o igual al texto ingresado; se incrementa i
+            for (i = 0; i <= texto.length; i++) {
+                //Si el valor que se busca es igual al elemento dentro del i
+                if (busqueda == texto[i]) {
+                    contador++; //aumentara el contador en 1
+                }
+            }
+            return contador; //Retorno la variable contador con su total
+        }
+        console.log(cuantasSeRepite()); //Llamo e imprimo la funcion cuantasSeRepite
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
