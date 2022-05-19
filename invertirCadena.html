@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Invertir una cadena
+
+        //Defino la funcion
+        function invertir() {
+            // Defino las variables tipo let que ocupare
+            let texto = "papafrita"; //Variable que contendra la palabra, numero o elemento
+            let resultaTexto = ""; //Variable donde se almacenara el elemento que esta en la posicion del indice
+
+            // texto.length -1 = para acceder al ultimo elemento en este caso "a"
+            for (let i = texto.length - 1; i >= 0; i--) { //recorre mientras i sea mayor o igual a 0; i-- para ir "desenciendo" (de [9] a [0])
+                resultaTexto = resultaTexto + texto[i]; //resultadoTexto = a lo que tenia + el elemento dentro del array. agregando x cada ciclo
+
+            }
+            //Fuera del ciclo for
+            return resultaTexto; //retorno el contenido de la variable resultaTexto
+        }
+        console.log(invertir()); //Imprimo y llamo a la funcion
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
